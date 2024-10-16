@@ -59,3 +59,6 @@ if [ -f ~/.config/waybar/themes${arrThemes[1]}/style-custom.css ] ;then
 fi
 
 waybar -c ~/.config/waybar/themes${arrThemes[0]}/$config_file -s ~/.config/waybar/themes${arrThemes[1]}/$style_file &
+#second bar
+waybar -c /home/shaun/.config/waybar/themes/shaun/Screen2/config -s /home/shaun/.config/waybar/themes/shaun/Screen2/style.css &
+

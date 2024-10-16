@@ -12,7 +12,7 @@
     "on-scroll-down": "hyprctl dispatch workspace r+1",
     "on-click": "activate",
     "active-only": false,
-    "all-outputs": true,
+    "all-outputs": false,
     "format": "{}",
     "format-icons": {
       "urgent": "",
@@ -20,7 +20,7 @@
       "default": ""
     },
     "persistent-workspaces": {
-      "*": 5
+      "*": 1
     }
   },
 
@@ -382,5 +382,21 @@
       ""
     ],
     "scroll-step": 1
-  }
+  },
+
+  "custom/spotify": {
+    "format": "{icon} {}",
+    "escape": false,
+    "return-type": "json",
+    "max-length": 40,
+    "interval": 30, // Remove this if your script is endless and write in loop
+    "on-click": "playerctl -p spotify play-pause",
+    "on-click-right": "killall spotify",
+    "smooth-scrolling-threshold": 10, // This value was tested using a trackpad, it should be lowered if using a mouse.
+    "on-scroll-up" : "playerctl -p spotify next",
+    "on-scroll-down" : "playerctl -p spotify previous",
+    "exec": "/home/shaun/dotfiles/.config/waybar/mediaplayer.py 2> /dev/null", // Script in resources/custom_modules folder
+    "exec-if": "pgrep spotify"
+}
+
 }
