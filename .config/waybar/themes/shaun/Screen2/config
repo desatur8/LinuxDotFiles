@@ -28,19 +28,18 @@
 
     // Modules Left
     "modules-left": [
-        "hyprland/workspaces",
+        "hyprland/window"
         
     ],
 
      // Modules Center
     "modules-center": [
-        "hyprland/window",
-        "custom/spotify"
+        "custom/spotify2"
     ],
 
      // Modules Right    
     "modules-right": [
-        "clock"
+        "hyprland/workspaces"
     ]
     
 }

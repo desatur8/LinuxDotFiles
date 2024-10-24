@@ -138,7 +138,7 @@
   // Windows VM
   "custom/windowsvm": {
     "format": "",
-    "on-click": "~/.config/ml4w/scripts/launchvm.sh",
+    "on-click": "/home/shaun/dotfiles/scripts/win11.sh",
     "tooltip": false
   },
 
@@ -169,8 +169,15 @@
 
   // Hyprshade
   "custom/hyprshade": {
+    "format": "",
+    "tooltip-format": "Left Click Area, right click screen",
+    "on-click": "sleep 0.5; /home/shaun/dotfiles/scripts/captureArea.sh",
+    "on-click-right": "sleep 0.5; /home/shaun/dotfiles/scripts/captureAll.sh"
+  },
+
+  "custom/ScreenshotFull": {
     "format": "",
-    "tooltip-format": "Toggle Screen Shader",
+    "tooltip-format": "Full Screenshot",
     "on-click": "sleep 0.5; ~/.config/hypr/scripts/hyprshade.sh",
     "on-click-right": "sleep 0.5; ~/.config/hypr/scripts/hyprshade.sh rofi"
   },
@@ -206,7 +213,7 @@
 
   // Clock
   "clock": {
-    "format": "{:%H:%M %a}",
+        "format": "{:%H:%M - %Om/%Od/%Y}",
     "on-click": "ags -t calendar",
     "tooltip": false
   },
@@ -265,6 +272,7 @@
       "custom/cliphist",
       "custom/hypridle",
       "custom/hyprshade"
+      
     ]
   },
 
@@ -397,6 +405,15 @@
     "on-scroll-down" : "playerctl -p spotify previous",
     "exec": "/home/shaun/dotfiles/.config/waybar/mediaplayer.py 2> /dev/null", // Script in resources/custom_modules folder
     "exec-if": "pgrep spotify"
+},
+
+  "custom/spotify2": {
+    "exec": "/usr/bin/python3 /home/shaun/dotfiles/.config/waybar/mediaplayer.py --player spotify",
+    "format": "{}  ",
+    "return-type": "json",
+    "on-click": "playerctl play-pause",
+    "on-scroll-up": "playerctl next",
+    "on-scroll-down": "playerctl previous"
 }
 
 }
