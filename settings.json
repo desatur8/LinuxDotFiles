@@ -1,0 +1,285 @@
+{
+  "username": "shaun",
+  "theme": {
+    "name": "Default",
+    "backgroundColor": "#121317",
+    "windowColor": "#1e212b",
+    "textColor": "#e2e2e2",
+    "black": "#16161e",
+    "red": "#ec6183",
+    "green": "#2ed8a2",
+    "yellow": "#e8b195",
+    "blue": "#2bc3de",
+    "magenta": "#d1aff8",
+    "cyan": "#62e0e2",
+    "white": "#e2e2e2",
+    "gray": "#97989d"
+  },
+  "wallpaper": {
+    "url": "https://w.wallhaven.cc/full/kx/wallhaven-kx5rpd.jpg",
+    "easing": "ease-in-out",
+    "fadeIn": true,
+    "blur": false
+  },
+  "terminal": {
+    "fixedHeight": true,
+    "windowGlow": true,
+    "windowGlowColor": "#291f3325",
+    "textGlow": false,
+    "opacity": 0,
+    "blur": 16
+  },
+  "prompt": {
+    "ctrlC": true,
+    "placeholder": "command...",
+    "placeholderColor": "gray",
+    "userColor": "green",
+    "atColor": "gray",
+    "hostColor": "magenta",
+    "promptColor": "magenta",
+    "promptSymbol": "❯",
+    "caretColor": "green",
+    "selectionBg": "yellow",
+    "selectionFg": "black"
+  },
+  "fetch": {
+    "timeFormat": "HH:mm",
+    "dateFormat": "DD/MM/YYYY",
+    "titleColor": "yellow",
+    "image": "assets/default-icon.svg",
+    "data": [
+      "Time: {time}",
+      "Date: {date}",
+      "{seperator}",
+      "OS: {osName} {osVersion}",
+      "Theme: {theme}",
+      "{seperator}",
+      "Browser: {browser} {browserVersion}",
+      "Engine: {engineName}",
+      "{seperator}",
+      "{colors}"
+    ]
+  },
+  "urlLaunch": {
+    "target": "_self",
+    "hoverColor": "magenta"
+  },
+  "search": {
+    "default": "https://google.com/search?q=",
+    "target": "_self",
+    "shortcutRegex": "([A-Za-z0-9]+) (.*)",
+    "shortcuts": [
+      {
+        "alias": "g",
+        "name": "Google Search",
+        "url": "https://google.com/search?q={}"
+      },
+      {
+        "alias": "d",
+        "name": "DuckDuckGo Search",
+        "url": "https://duckduckgo.com/?q={}"
+      },
+      {
+        "alias": "b",
+        "name": "Brave Search",
+        "url": "https://search.brave.com/search?q={}"
+      },
+      {
+        "alias": "gh",
+        "name": "Github Search",
+        "url": "https://github.com/search?q={}"
+      },
+      {
+        "alias": "s",
+        "name": "Stack Overflow Search",
+        "url": "https://stackoverflow.com/search?q={}"
+      },
+      {
+        "alias": "r",
+        "name": "Subreddit Search",
+        "url": "https://reddit.com/r/{}"
+      },
+      {
+        "alias": "w",
+        "name": "Wikipedia Search",
+        "url": "https://en.wikipedia.org/wiki/{}"
+      }
+    ]
+  },
+  "sections": {
+    "list": [
+      {
+        "title": "social",
+        "color": "green",
+        "align": "left",
+        "links": [
+          {
+            "name": "chatgpt",
+            "url": "https://chat.openai.com",
+            "icon": "simple-icons:openai"
+          },
+          {
+            "name": "reddit",
+            "url": "https://reddit.com/",
+            "icon": "simple-icons:reddit"
+          },
+          {
+            "name": "whatsapp",
+            "url": "https://web.whatsapp.com/",
+            "icon": "simple-icons:whatsapp"
+          },
+          {
+            "name": "gmail",
+            "url": "https://mail.google.com/mail/u/0/#inbox",
+            "icon": "simple-icons:gmail"
+          }
+        ]
+      },
+      {
+        "title": "media",
+        "color": "magenta",
+        "align": "left",
+        "links": [
+          {
+            "name": "plex",
+            "url": "http://10.1.1.200:32400/web/index.html#!/",
+            "icon": "mdi:plex"
+          },
+          {
+            "name": "jellyfin",
+            "url": "http://10.1.1.200:8097/web/index.html#!/",
+            "icon": "simple-icons:jellyfin"
+          },
+          {
+            "name": "youtube",
+            "url": "https://youtube.com/",
+            "icon": "simple-icons:youtube"
+          },
+          {
+            "name": "spotify",
+            "url": "https://spotify.com/",
+            "icon": "simple-icons:spotify"
+          }
+        ]
+      },
+      {
+        "title": "media management",
+        "color": "cyan",
+        "align": "left",
+        "links": [
+          {
+            "name": "sonarr",
+            "url": "http://10.1.1.200:8989/",
+            "icon": "simple-icons:sonarr"
+          },
+          {
+            "name": "radarr",
+            "url": "http://10.1.1.200:7878/",
+            "icon": "simple-icons:radarr"
+          },
+          {
+            "name": "overseer",
+            "url": "http://10.1.1.200:5055/",
+            "icon": "mdi:movie-edit"
+          },
+          {
+            "name": "tautulli",
+            "url": "http://10.1.1.200:8181/home",
+            "icon": "mdi:plex"
+          }
+        ]
+      },
+      {
+        "title": "selfhosted",
+        "color": "blue",
+        "align": "left",
+        "links": [
+          {
+            "name": "casaos",
+            "url": "http://10.1.1.200/#/",
+            "icon": "mdi:clouds"
+          },
+          {
+            "name": "guacamole",
+            "url": "http://10.1.1.200:8080/#/",
+            "icon": "simple-icons:apacheguacamole"
+          },
+          {
+            "name": "pihole",
+            "url": "http://10.1.1.200:8800/admin/login.php",
+            "icon": "simple-icons:pihole"
+          },
+          {
+            "name": "flame",
+            "url": "http://10.1.1.200:5005",
+            "icon": "mdi:fire"
+          }
+        ]
+      },
+      {
+        "title": "pirate",
+        "color": "yellow",
+        "align": "left",
+        "links": [
+          {
+            "name": "transmission",
+            "url": "http://10.1.1.200:9091/transmission/web/",
+            "icon": "simple-icons:transmission"
+          },
+          {
+            "name": "prowlarr",
+            "url": "http://10.1.1.200:9696/",
+            "icon": "simple-icons:bittorrent"
+          },
+          {
+            "name": "torrentgalaxy",
+            "url": "https://www.torrentgalaxy.to/",
+            "icon": "mdi:pirate"
+          },
+          {
+            "name": "eztv",
+            "url": "https://eztvx.to/home",
+            "icon": "mdi:pirate"
+          }
+        ]
+      },
+      {
+        "title": "work",
+        "color": "red",
+        "align": "left",
+        "links": [
+          {
+            "name": "office",
+            "url": "https://www.office.com",
+            "icon": "mdi:microsoft-office"
+          },
+          {
+            "name": "admin 365",
+            "url": "https://admin.microsoft.com",
+            "icon": "mdi:security"
+          },
+          {
+            "name": "owa",
+            "url": "https://anywhere.fseducation.gov.za/owa",
+            "icon": "mdi:microsoft-outlook"
+          },
+          {
+            "name": "ecp",
+            "url": "https://anywhere.fseducation.gov.za/ecp",
+            "icon": "mdi:security"
+          },
+          {
+            "name": "kaspersky cloud",
+            "url": "https://account.kaspersky.com/SignIn?ReferringRealm=B2BEnterprise&locale=en&ReturnUrl=https%3a%2f%2fksc.kaspersky.com%2f",
+            "icon": "simple-icons:kaspersky"
+          },
+          {
+            "name": "helpdesk",
+            "url": "https://helpdesk.fseducation.gov.za/helpdesk/WebObjects/Helpdesk.woa",
+            "icon": "simple-icons:helpdesk"
+          }
+        ]
+      }
+    ]
+  }
+}
