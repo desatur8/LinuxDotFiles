@@ -136,116 +136,8 @@
         ]
       },
       {
-        "title": "media",
-        "color": "magenta",
-        "align": "left",
-        "links": [
-          {
-            "name": "plex",
-            "url": "http://10.1.1.200:32400/web/index.html#!/",
-            "icon": "mdi:plex"
-          },
-          {
-            "name": "jellyfin",
-            "url": "http://10.1.1.200:8097/web/index.html#!/",
-            "icon": "simple-icons:jellyfin"
-          },
-          {
-            "name": "youtube",
-            "url": "https://youtube.com/",
-            "icon": "simple-icons:youtube"
-          },
-          {
-            "name": "spotify",
-            "url": "https://spotify.com/",
-            "icon": "simple-icons:spotify"
-          }
-        ]
-      },
-      {
-        "title": "media management",
-        "color": "cyan",
-        "align": "left",
-        "links": [
-          {
-            "name": "sonarr",
-            "url": "http://10.1.1.200:8989/",
-            "icon": "simple-icons:sonarr"
-          },
-          {
-            "name": "radarr",
-            "url": "http://10.1.1.200:7878/",
-            "icon": "simple-icons:radarr"
-          },
-          {
-            "name": "overseer",
-            "url": "http://10.1.1.200:5055/",
-            "icon": "mdi:movie-edit"
-          },
-          {
-            "name": "tautulli",
-            "url": "http://10.1.1.200:8181/home",
-            "icon": "mdi:plex"
-          }
-        ]
-      },
-      {
-        "title": "selfhosted",
+        "title": "Office",
         "color": "blue",
-        "align": "left",
-        "links": [
-          {
-            "name": "casaos",
-            "url": "http://10.1.1.200/#/",
-            "icon": "mdi:clouds"
-          },
-          {
-            "name": "guacamole",
-            "url": "http://10.1.1.200:8080/#/",
-            "icon": "simple-icons:apacheguacamole"
-          },
-          {
-            "name": "pihole",
-            "url": "http://10.1.1.200:8800/admin/login.php",
-            "icon": "simple-icons:pihole"
-          },
-          {
-            "name": "flame",
-            "url": "http://10.1.1.200:5005",
-            "icon": "mdi:fire"
-          }
-        ]
-      },
-      {
-        "title": "pirate",
-        "color": "yellow",
-        "align": "left",
-        "links": [
-          {
-            "name": "transmission",
-            "url": "http://10.1.1.200:9091/transmission/web/",
-            "icon": "simple-icons:transmission"
-          },
-          {
-            "name": "prowlarr",
-            "url": "http://10.1.1.200:9696/",
-            "icon": "simple-icons:bittorrent"
-          },
-          {
-            "name": "torrentgalaxy",
-            "url": "https://www.torrentgalaxy.to/",
-            "icon": "mdi:pirate"
-          },
-          {
-            "name": "eztv",
-            "url": "https://eztvx.to/home",
-            "icon": "mdi:pirate"
-          }
-        ]
-      },
-      {
-        "title": "work",
-        "color": "red",
         "align": "left",
         "links": [
           {
@@ -259,26 +151,33 @@
             "icon": "mdi:security"
           },
           {
-            "name": "owa",
-            "url": "https://anywhere.fseducation.gov.za/owa",
-            "icon": "mdi:microsoft-outlook"
-          },
-          {
             "name": "ecp",
             "url": "https://anywhere.fseducation.gov.za/ecp",
             "icon": "mdi:security"
-          },
-          {
-            "name": "kaspersky cloud",
-            "url": "https://account.kaspersky.com/SignIn?ReferringRealm=B2BEnterprise&locale=en&ReturnUrl=https%3a%2f%2fksc.kaspersky.com%2f",
-            "icon": "simple-icons:kaspersky"
-          },
-          {
-            "name": "helpdesk",
-            "url": "https://helpdesk.fseducation.gov.za/helpdesk/WebObjects/Helpdesk.woa",
-            "icon": "simple-icons:helpdesk"
           }
         ]
+      },
+      {
+          "title": "Services",
+          "color": "green",
+          "align": "left",
+          "links": [
+            {
+              "name": "kaspersky cloud",
+              "url": "https://account.kaspersky.com/SignIn?ReferringRealm=B2BEnterprise&locale=en&ReturnUrl=https%3a%2f%2fksc.kaspersky.com%2f",
+              "icon": "simple-icons:kaspersky"
+            },
+            {
+              "name": "helpdesk",
+              "url": "https://helpdesk.fseducation.gov.za/helpdesk/WebObjects/Helpdesk.woa",
+              "icon": "simple-icons:helpdesk"
+            },
+            {
+              "name": "Solarwinds",
+              "url": "https://orion.fseducation.gov.za/",
+              "icon": "simple-icons:helpdesk"
+            }
+          ]
       }
     ]
   }
